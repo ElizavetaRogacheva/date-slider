@@ -1,0 +1,28 @@
+.dateBlock {
+  position: absolute;
+  font-weight: bold;
+  font-size: 200px;
+  line-height: 160px;
+  text-align: center;
+  pointer-events: none;
+  z-index: -1;
+  display: flex;
+  justify-content: space-between;
+  width: 973px;
+  @media (max-width: 1010px) {
+    font-size: 56px;
+    line-height: 72px;
+    width: 273px;
+    padding-bottom: 56px;
+    z-index: 1;
+    position: static;
+  }
+
+  &_begin {
+    color: var(--iris);
+  }
+
+  &_end {
+    color: var(--fuschia);
+  }
+}
